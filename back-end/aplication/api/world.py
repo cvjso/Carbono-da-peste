@@ -27,27 +27,36 @@ def transform(tipo:str):
 #     fig = px.scatter_geo(x.head(10), locations="Country/Region",size=ano , color = ano, size_max = 40)
 #     return fig.show()
 
-def grafico_linha(tipo:str, ano:str):
+# def grafico_linha(tipo:str, ano:str):
+#     total = pd.read_csv("aplication/api/resources/"+tipo+".csv")
+
+#     isa = total.sort_values(by=ano, ascending=False)
+#     isa = isa.head(10)
+#     isa = isa.transpose()
+#     index = list(isa.index.values)
+
+#     for i in range(len(index)):
+#         if i > 1:
+#             index[i] = int(1988+i)
+
+#     for i in isa:
+#         plt.plot(index[2:],isa[i][2:], label = isa[i][0])
+#         plt.legend()
+#     return plt.show()
+
+def grafico_linha(tipo:str, pais:str):
     total = pd.read_csv("aplication/api/resources/"+tipo+".csv")
-
-    isa = total.sort_values(by=ano, ascending=False)
-    isa = isa.head(10)
-    isa = isa.transpose()
-    index = list(isa.index.values)
-
-    for i in range(len(index)):
-        if i > 1:
-            index[i] = int(1988+i)
-
-    for i in isa:
-        plt.plot(index[2:],isa[i][2:], label = isa[i][0])
-        plt.legend()
-    return plt.show()
+    result = total.sort_values(by='2016', ascending=False)
+    result = result.head(10)
+    result = result.transpose()
+    result = result.to_dict()
+    for i in result:
+        if result[i]['Country/Region'] == pais:
+            return result[i]
 
 def grafico_princial(tipo,ano):
     total = pd.read_csv("aplication/api/resources/"+tipo+".csv")
     result = total.sort_values(by=ano, ascending=False)
-    result = result.head(10)
     result = result.to_dict()
     dic = {}
     for i in result:
@@ -59,5 +68,3 @@ def grafico_princial(tipo,ano):
             dic2[result["Country/Region"][i]] = dic[ano][i]
     return dic2
 
-# grafico_linha("ghg-emissions",'1990')
-# grafico_princial("ghg-emissions",'1990')

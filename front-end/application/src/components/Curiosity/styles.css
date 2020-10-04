@@ -1,0 +1,45 @@
+.linkImage {
+    width: 100%;
+}
+
+.Header-Principal {
+    margin-top: 2%;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    color: #255853;
+
+}
+
+.Header-Principal text {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.Header-Aux {
+    color: #666666;
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top:0.5%;
+}
+
+.Links-Content {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.Links-Content div {
+    width: 15%;
+    height: 15%;
+    margin-right: 4%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}

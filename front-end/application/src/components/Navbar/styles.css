@@ -1,0 +1,36 @@
+.NavbarContent{
+    display: flex;
+    background: #306B5C;
+}
+
+.Navbar-selections{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Navbar-selections div div{
+    margin-left: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+.Navbar-selections div{
+    flex-direction: row;
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+}
+
+.logo-img{
+    width: 30%;
+    margin-left: 1.4%;
+}
+

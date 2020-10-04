@@ -1,0 +1,33 @@
+.Header-Graph{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 3.5%;
+    margin-bottom: 1%;
+}
+
+.Header-Graph text{
+    color: #306B5C;
+    font-size: 38px;
+    font-family: "Abril Fatface";
+}
+
+.Form-Graph {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.Form-Graph select {
+    margin: 1%;
+}
+
+.graph-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+}
