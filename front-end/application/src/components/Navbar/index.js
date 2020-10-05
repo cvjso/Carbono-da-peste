@@ -19,7 +19,6 @@ export class Navbar extends Component {
                     <div>
                         <div><Link to="/">home</Link></div>
                         <div><Link to="/graph">gráficos</Link></div>
-                        <div><Link to="/ajuda">como ajudar?</Link></div>
                         <div><Link to="/saiba-mais">saiba mais</Link></div>
                     </div>
                 </div>

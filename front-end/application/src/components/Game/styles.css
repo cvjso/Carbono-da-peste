@@ -1,0 +1,54 @@
+.Header-Game {
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.Header-Game h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #255853;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.Sub-Header text{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Sub-Header{
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.game-layout img {
+    width: 80%;
+    height: 80%;
+}
+
+.game-layout {
+    display: flex;
+    justify-content: center;
+}
+
+.game-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.game-buttons button {
+    margin: 1%;
+}
+
+.footer-final {
+    height: 100px;
+    width: 100%;
+}

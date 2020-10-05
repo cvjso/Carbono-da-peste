@@ -8,13 +8,14 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home"
 import Curiosity from "./components/Curiosity"
+import Game from "./components/Game"
 
 function App() {
   return (
     <Router>
       <Switch>
           <Route path="/graph">
-            <text>A</text>
+            <Home/>
           </Route>
           
           <Route path="/ajuda">
@@ -26,7 +27,7 @@ function App() {
           </Route>
 
           <Route path="/">
-            <Home/>
+            <Game/>
           </Route>
 
         </Switch>

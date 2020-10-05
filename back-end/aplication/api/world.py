@@ -18,36 +18,10 @@ def transform(tipo:str):
 
     return total
 
-# def grafico_princial(tipo:str, ano:str):
-#     """
-#     tipo: Waste, Bunkerfuel, Agriculture, Land-Use Change And Forestry , Energy, Industrial process, All
-#     ano: 1990 - 2016
-#     """
-#     x = transform(tipo)
-#     fig = px.scatter_geo(x.head(10), locations="Country/Region",size=ano , color = ano, size_max = 40)
-#     return fig.show()
-
-# def grafico_linha(tipo:str, ano:str):
-#     total = pd.read_csv("aplication/api/resources/"+tipo+".csv")
-
-#     isa = total.sort_values(by=ano, ascending=False)
-#     isa = isa.head(10)
-#     isa = isa.transpose()
-#     index = list(isa.index.values)
-
-#     for i in range(len(index)):
-#         if i > 1:
-#             index[i] = int(1988+i)
-
-#     for i in isa:
-#         plt.plot(index[2:],isa[i][2:], label = isa[i][0])
-#         plt.legend()
-#     return plt.show()
 
 def grafico_linha(tipo:str, pais:str):
     total = pd.read_csv("aplication/api/resources/"+tipo+".csv")
     result = total.sort_values(by='2016', ascending=False)
-    result = result.head(10)
     result = result.transpose()
     result = result.to_dict()
     for i in result:

@@ -137,15 +137,6 @@ export class Home extends Component {
                             })}
                         </select>
 
-                        <select name="select2" onChange={this.handleChangeAno}>
-                            <option value="" disabled selected>Ano</option>
-                            {this.anos.map((item) => {
-                                return(
-                                    <option value={item}>{item}</option>
-                                )
-                            })}
-                        </select>
-
                         <select name="select3" onChange={this.handleChangeTipo}>
                             <option value="" disabled selected>Área</option>
                             {this.area.map((item) => {
