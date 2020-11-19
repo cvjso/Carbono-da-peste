@@ -4,8 +4,8 @@ from flask_cors import CORS, cross_origin
 from flask import request
 
 # Own
-from functions.world import grafico_princial
-from functions.world import grafico_linha
+from world import grafico_princial
+from world import grafico_linha
 
 app = Flask(__name__)
 
