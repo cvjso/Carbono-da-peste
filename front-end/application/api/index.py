@@ -14,7 +14,7 @@ CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-@app.route('/geral', methods=['POST'])
+@app.route('/', defaults={'path': ''})
 @cross_origin()
 def Geral():
     req_data = request.get_json()

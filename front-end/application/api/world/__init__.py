@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 
 def transform(tipo:str):
-    total = pd.read_csv("aplication/api/resources/"+tipo+".csv")
-    change = pd.read_excel('aplication/api/resources/owid-co2-data.xlsx')
+    total = pd.read_csv("/resources/"+tipo+".csv")
+    change = pd.read_excel('/resources/owid-co2-data.xlsx')
     x = 0
     y = 0
     while x != 193:
@@ -20,7 +20,7 @@ def transform(tipo:str):
 
 
 def grafico_linha(tipo:str, pais:str):
-    total = pd.read_csv("aplication/api/resources/"+tipo+".csv")
+    total = pd.read_csv("/resources/"+tipo+".csv")
     result = total.sort_values(by='2016', ascending=False)
     result = result.transpose()
     result = result.to_dict()
@@ -29,7 +29,7 @@ def grafico_linha(tipo:str, pais:str):
             return result[i]
 
 def grafico_princial(tipo,ano):
-    total = pd.read_csv("aplication/api/resources/"+tipo+".csv")
+    total = pd.read_csv("/resources/"+tipo+".csv")
     result = total.sort_values(by=ano, ascending=False)
     result = result.to_dict()
     dic = {}
