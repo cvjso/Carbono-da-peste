@@ -53,7 +53,7 @@ export class Home extends Component {
 
     send_request = (tipo,pais,ano) => {
 		try {
-			return axios.post('http://127.0.0.1:5000/geral', {
+			return axios.post('api/geral', {
 				"tipo":tipo,
                 "pais":pais,
                 "ano": ano
